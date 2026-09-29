@@ -8,7 +8,7 @@
   - [ ] [MANUALLY] Send a test email to `info@startr.llc`. MX points at Namecheap forwarding; only addresses with a forwarding rule arrive.
   - [ ] After deploy, check the preview in a link debugger (opengraph.xyz or a Slack paste).
   - [ ] Swap in a larger logo master when one exists; the 512px icons are upscaled from a 400px source.
-  - [ ] [MANUALLY] Create the GitHub repo and push.
+  - [x] Create the GitHub repo and push (2026-09-29): `Startr/WEB-Startr.llc`, public, git-flow with `develop` as the default branch and `master` for releases.
   - [ ] [MANUALLY] Cloudflare: create Pages project `startr-llc`, add custom domains `startr.llc` and `www.startr.llc`, remove the old HTTP redirect rule.
   - [ ] Verify <https://startr.llc> serves the page, and `www` redirects to the apex.
 
