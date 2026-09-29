@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Source for the 16/32/48px icons. The full "Startr" wordmark turns to
+     mush below ~48px, so small sizes use the logo's own S, in the logo's own
+     colours (wordmark #B9E1FD on the disc purples #492F6B to #211333).
+     Rendered at 256px with a transparent page, then downscaled by
+     design/make-icons.sh. Render with `make favicon`. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://startr.style/style.css">
+    <style>html, body { margin: 0; background: transparent; }</style>
+  </head>
+  <body style="--w:256px; --h:256px; --m:0;">
+    <div style="
+      --d:flex; --ai:center; --jc:center;
+      --w:256px; --h:256px; --radius:50%;
+      --bg:radial-gradient(circle at 35% 30%, #492F6B, #361C58 55%, #211333);
+    ">
+      <span style="--size:200px; --weight:900; --lh:1; --c:#B9E1FD; --mt:-12px;">S</span>
+    </div>
+  </body>
+</html>
