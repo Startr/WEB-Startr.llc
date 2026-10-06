@@ -2,10 +2,10 @@
 
 ## In Progress
 
-- [ ] **Publish the Startr LLC company page** (2026-09-29): startr.llc times out over HTTPS today, and plain HTTP 302s to startr.cloud.
+- [ ] **Publish the Startr LLC company page** (2026-09-29): the apex answers 200 over HTTPS with an older draft (contact info@startr.cloud, the logo as og:image); plain HTTP 301s to it; www.startr.llc returns 522 (checked 2026-10-06).
   - [x] Draft `public/index.html` in the plante.somma.consulting style; `make check` green.
   - [x] Link previews and icons (2026-09-29): 1200x630 social card, favicons from an S monogram (the wordmark is unreadable below 48px), Apple, Android and maskable icons, web manifest. Sources in `design/`.
-  - [ ] [MANUALLY] Send a test email to `info@startr.llc`. MX points at Namecheap forwarding; only addresses with a forwarding rule arrive.
+  - [ ] [MANUALLY] Send a test email to `info@startr.llc` once mail is routed. The zone (Cloudflare DNS) has no MX, SPF or DMARC yet (2026-10-06); the plan routes every @startr.llc address into the shared hello@sage.is inbox via Email Routing and the Trellis Worker, waiting on the API token gaining the startr.llc zone.
   - [ ] After deploy, check the preview in a link debugger (opengraph.xyz or a Slack paste).
   - [ ] Swap in a larger logo master when one exists; the 512px icons are upscaled from a 400px source.
   - [x] Create the GitHub repo and push (2026-09-29): `Startr/WEB-Startr.llc`, public, git-flow with `develop` as the default branch and `master` for releases.
