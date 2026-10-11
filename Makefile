@@ -44,8 +44,9 @@ CONTAINER := $(PROJECT)-$(BRANCH)
 
 # 4. Project-specific targets
 # Cloudflare Pages names allow only lowercase letters, digits and dashes, so
-# the Pages project cannot reuse PROJECT_NAME (WEB-Startr.llc).
-PAGES_PROJECT ?= startr-llc
+# the Pages project cannot reuse PROJECT_NAME (WEB-Startr.llc). The project
+# already serving startr.llc is web-startr-llc (a direct upload, no git source).
+PAGES_PROJECT ?= web-startr-llc
 PORT ?= 8090
 SELF ?= https://startr.llc
 # The design renders need puppeteer; this repo keeps no node_modules of its own.
